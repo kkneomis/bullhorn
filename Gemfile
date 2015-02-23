@@ -30,6 +30,8 @@ gem 'spring',        group: :development
 # gem 'bcrypt', '~> 3.1.7'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem "therubyracer"
+gem "font-awesome-rails"
+gem 'simple_form'
 # Use unicorn as the app server
 # gem 'unicorn'
 
