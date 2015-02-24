@@ -1,0 +1,21 @@
+
+
+<div class="container">
+  <div class="text-center">
+    <%= link_to 'New Moo', new_moo_path, class:"btn btn-success btn-lg" %>
+    
+  </div>
+</div><br>
+    <% @moos.each do |moo| %>
+  
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <%= moo.content %> 
+      </div>
+      <div class="panel-footer"> sent by <%= moo.user.name %> the <%= moo.user.title %>  on   <%= moo.created_at.strftime("%b/%d/%Y") %> at   <%= moo.created_at.strftime("%I:%M%p") %></div>
+    </div>
+    <% end %>
+
+
+
+<br>

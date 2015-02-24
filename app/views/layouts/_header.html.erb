@@ -8,7 +8,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to "<i class='fa fa-bullhorn'></i>Bullhorn".html_safe, root_path, class:"navbar-brand" %>
+       <% if user_signed_in? %>  
+          <%= link_to "<i class='fa fa-bullhorn'></i>Bullhorn".html_safe, moos_path, class:"navbar-brand" %>
+        <% else %>
+          <%= link_to "<i class='fa fa-bullhorn'></i>Bullhorn".html_safe, root_path, class:"navbar-brand" %>
+        <% end %>
+    
 
     </div>
 

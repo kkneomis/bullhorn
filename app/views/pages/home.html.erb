@@ -1,5 +1,10 @@
 <div class="jumbotron">
   <h1><i class="fa fa-bullhorn">Bullhorn</i></h1>
   <h3>This is my twitter clone application</h3>
-  <%= link_to "Sign Up", new_user_session_path, class:"btn btn-primary btn-lg" %>
+ <% if user_signed_in? %>
+ <%= link_to "Send a Moo", new_moo_path, class:"btn btn-primary btn-lg" %>
+         
+        <% else %>
+           <%= link_to "Login", new_user_session_path, class:"btn btn-primary btn-lg" %>
+        <% end %>
 </div>
