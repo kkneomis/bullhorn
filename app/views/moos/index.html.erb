@@ -2,13 +2,14 @@
 
 <div class="container">
   <div class="text-center">
+    <h1 style="font-weight:bold; color:orange;"> <%= @moos.count %> Moos mooed on Kakmoo </h1>
     <%= link_to 'New Moo', new_moo_path, class:"btn btn-success btn-lg" %>
     
   </div>
 </div><br>
     <% @moos.each do |moo| %>
   
-    <div class="panel panel-info">
+    <div class="panel panel-primary">
       <div class="panel-heading">
         <%= moo.content %> 
       </div>
