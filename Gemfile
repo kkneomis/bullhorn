@@ -25,7 +25,7 @@ group :production do
 gem 'pg'
 
 gem 'rails_12factor'
-
+  
 end
 
 group :development, :test do
@@ -42,8 +42,8 @@ end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-gem "therubyracer"
+#gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+#gem "therubyracer"
 gem "font-awesome-rails"
 gem 'simple_form'
 gem 'devise'

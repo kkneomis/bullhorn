@@ -8,8 +8,8 @@
 </div><br>
     <% @moos.each do |moo| %>
   
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="panel panel-info">
+      <div class="panel-heading">
         <%= moo.content %> 
       </div>
       <div class="panel-footer"> sent by <%= moo.user.name %> the <%= moo.user.title %>  on   <%= moo.created_at.strftime("%b/%d/%Y") %> at   <%= moo.created_at.strftime("%I:%M%p") %></div>
